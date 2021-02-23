@@ -77,7 +77,7 @@ namespace BlogLab.Repository
             dataTable.Rows.Add(blogCommentCreate.BlogCommentID, blogCommentCreate.ParentCommentID, blogCommentCreate.BlogID
                 ,blogCommentCreate.Content);
 
-            int newBlogCommentID;
+            int? newBlogCommentID;
 
             using (var connection = new SqlConnection(_config.GetConnectionString("DefaultConnection")))
             {
@@ -88,9 +88,9 @@ namespace BlogLab.Repository
                     commandType: CommandType.StoredProcedure
                     );
             }
-            newBlogCommentID=
-            Photo photo = await GetAsync(newBlogCommentID);
-            return photo;
+            newBlogCommentID = newBlogCommentID ?? blogCommentCreate.BlogCommentID;
+            BlogComment blogComment = await GetAsync(newBlogCommentID.Value);
+            return blogComment;
         }
     }
 }
