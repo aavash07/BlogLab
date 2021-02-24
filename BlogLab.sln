@@ -4,12 +4,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 16.0.30804.86
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlogLab.Web", "BlogLab.Web\BlogLab.Web.csproj", "{988438D3-D871-4F3C-A91F-D4F68A57E37A}"
+	ProjectSection(ProjectDependencies) = postProject
+		{BA4CBDB8-CC2D-4D9E-881B-D510A89F87E0} = {BA4CBDB8-CC2D-4D9E-881B-D510A89F87E0}
+	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlogLab.Models", "BlogLab.Models\BlogLab.Models.csproj", "{BA4CBDB8-CC2D-4D9E-881B-D510A89F87E0}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlogLab.Repository", "BlogLab.Repository\BlogLab.Repository.csproj", "{1750D173-204E-4AD7-B98E-BE44E4BB5A52}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlogLab.Identity", "BlogLab.Identity\BlogLab.Identity.csproj", "{96B58A1D-108D-4097-93BC-3A48C6AFAB65}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlogLab.Identity", "BlogLab.Identity\BlogLab.Identity.csproj", "{96B58A1D-108D-4097-93BC-3A48C6AFAB65}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlogLab.Services", "BlogLab.Services\BlogLab.Services.csproj", "{9A5AC745-FDB6-4784-BCC6-D4F505DC2BC7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +38,10 @@ Global
 		{96B58A1D-108D-4097-93BC-3A48C6AFAB65}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{96B58A1D-108D-4097-93BC-3A48C6AFAB65}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{96B58A1D-108D-4097-93BC-3A48C6AFAB65}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9A5AC745-FDB6-4784-BCC6-D4F505DC2BC7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A5AC745-FDB6-4784-BCC6-D4F505DC2BC7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A5AC745-FDB6-4784-BCC6-D4F505DC2BC7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A5AC745-FDB6-4784-BCC6-D4F505DC2BC7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
