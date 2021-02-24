@@ -5,7 +5,15 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="DryIoc.dll" Version="4.7.3" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="5.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\BlogLab.Identity\BlogLab.Identity.csproj" />
     <ProjectReference Include="..\BlogLab.Models\BlogLab.Models.csproj" />
+    <ProjectReference Include="..\BlogLab.Repository\BlogLab.Repository.csproj" />
+    <ProjectReference Include="..\BlogLab.Services\BlogLab.Services.csproj" />
   </ItemGroup>
 
 </Project>

@@ -4,6 +4,73 @@
     "D:\\VisulStudio\\BlogLab\\BlogLab.Web\\BlogLab.Web.csproj": {}
   },
   "projects": {
+    "D:\\VisulStudio\\BlogLab\\BlogLab.Identity\\BlogLab.Identity.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\VisulStudio\\BlogLab\\BlogLab.Identity\\BlogLab.Identity.csproj",
+        "projectName": "BlogLab.Identity",
+        "projectPath": "D:\\VisulStudio\\BlogLab\\BlogLab.Identity\\BlogLab.Identity.csproj",
+        "packagesPath": "C:\\Users\\aavas\\.nuget\\packages\\",
+        "outputPath": "D:\\VisulStudio\\BlogLab\\BlogLab.Identity\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\aavas\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {
+              "D:\\VisulStudio\\BlogLab\\BlogLab.Models\\BlogLab.Models.csproj": {
+                "projectPath": "D:\\VisulStudio\\BlogLab\\BlogLab.Models\\BlogLab.Models.csproj"
+              },
+              "D:\\VisulStudio\\BlogLab\\BlogLab.Repository\\BlogLab.Repository.csproj": {
+                "projectPath": "D:\\VisulStudio\\BlogLab\\BlogLab.Repository\\BlogLab.Repository.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "Microsoft.Extensions.Identity.Core": {
+              "target": "Package",
+              "version": "[5.0.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
     "D:\\VisulStudio\\BlogLab\\BlogLab.Models\\BlogLab.Models.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -64,6 +131,166 @@
         }
       }
     },
+    "D:\\VisulStudio\\BlogLab\\BlogLab.Repository\\BlogLab.Repository.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\VisulStudio\\BlogLab\\BlogLab.Repository\\BlogLab.Repository.csproj",
+        "projectName": "BlogLab.Repository",
+        "projectPath": "D:\\VisulStudio\\BlogLab\\BlogLab.Repository\\BlogLab.Repository.csproj",
+        "packagesPath": "C:\\Users\\aavas\\.nuget\\packages\\",
+        "outputPath": "D:\\VisulStudio\\BlogLab\\BlogLab.Repository\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\aavas\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {
+              "D:\\VisulStudio\\BlogLab\\BlogLab.Models\\BlogLab.Models.csproj": {
+                "projectPath": "D:\\VisulStudio\\BlogLab\\BlogLab.Models\\BlogLab.Models.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "Dapper": {
+              "target": "Package",
+              "version": "[2.0.78, )"
+            },
+            "Microsoft.Extensions.Configuration.Abstractions": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Microsoft.Extensions.Identity.Core": {
+              "target": "Package",
+              "version": "[5.0.3, )"
+            },
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\VisulStudio\\BlogLab\\BlogLab.Services\\BlogLab.Services.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\VisulStudio\\BlogLab\\BlogLab.Services\\BlogLab.Services.csproj",
+        "projectName": "BlogLab.Services",
+        "projectPath": "D:\\VisulStudio\\BlogLab\\BlogLab.Services\\BlogLab.Services.csproj",
+        "packagesPath": "C:\\Users\\aavas\\.nuget\\packages\\",
+        "outputPath": "D:\\VisulStudio\\BlogLab\\BlogLab.Services\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\aavas\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {
+              "D:\\VisulStudio\\BlogLab\\BlogLab.Models\\BlogLab.Models.csproj": {
+                "projectPath": "D:\\VisulStudio\\BlogLab\\BlogLab.Models\\BlogLab.Models.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "CloudinaryDotNet": {
+              "target": "Package",
+              "version": "[1.14.0, )"
+            },
+            "Microsoft.AspNetCore.Http.Features": {
+              "target": "Package",
+              "version": "[5.0.3, )"
+            },
+            "Microsoft.Extensions.Configuration.Abstractions": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Microsoft.Extensions.Options": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Microsoft.IdentityModel.Tokens": {
+              "target": "Package",
+              "version": "[6.8.0, )"
+            },
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[6.8.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
     "D:\\VisulStudio\\BlogLab\\BlogLab.Web\\BlogLab.Web.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -88,8 +315,17 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
+              "D:\\VisulStudio\\BlogLab\\BlogLab.Identity\\BlogLab.Identity.csproj": {
+                "projectPath": "D:\\VisulStudio\\BlogLab\\BlogLab.Identity\\BlogLab.Identity.csproj"
+              },
               "D:\\VisulStudio\\BlogLab\\BlogLab.Models\\BlogLab.Models.csproj": {
                 "projectPath": "D:\\VisulStudio\\BlogLab\\BlogLab.Models\\BlogLab.Models.csproj"
+              },
+              "D:\\VisulStudio\\BlogLab\\BlogLab.Repository\\BlogLab.Repository.csproj": {
+                "projectPath": "D:\\VisulStudio\\BlogLab\\BlogLab.Repository\\BlogLab.Repository.csproj"
+              },
+              "D:\\VisulStudio\\BlogLab\\BlogLab.Services\\BlogLab.Services.csproj": {
+                "projectPath": "D:\\VisulStudio\\BlogLab\\BlogLab.Services\\BlogLab.Services.csproj"
               }
             }
           }
@@ -103,6 +339,16 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
+          "dependencies": {
+            "DryIoc.dll": {
+              "target": "Package",
+              "version": "[4.7.3, )"
+            },
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[5.0.3, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
