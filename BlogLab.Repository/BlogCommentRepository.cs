@@ -84,7 +84,9 @@ namespace BlogLab.Repository
                 await connection.OpenAsync();
                 newBlogCommentID = await connection.ExecuteScalarAsync<int>(
                     "BlogComment_Upsert",
-                    new { BlogCommetn = dataTable.AsTableValuedParameter("dbo.BlogCommentType") },
+                    new { BlogComment = dataTable.AsTableValuedParameter("dbo.BlogCommentType"),
+                    ApplicationUserID=applicationUserID
+                    },
                     commandType: CommandType.StoredProcedure
                     );
             }
