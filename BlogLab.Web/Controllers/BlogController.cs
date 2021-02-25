@@ -88,7 +88,7 @@ namespace BlogLab.Web.Controllers
             }
             else
             {
-                return BadRequest("You did not create this blog")
+                return BadRequest("You did not create this blog");
             }
         }
 

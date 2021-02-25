@@ -22,11 +22,11 @@ namespace BlogLab.Web.Controllers
         private readonly IPhotoServices _photoService;
 
         public PhotoController(
-            IPhotoRepository photoRepository, IBlogRepository blogRepository, IPhotoServices photoServices)
+            IPhotoRepository photoRepository, IBlogRepository blogRepository, IPhotoServices photoService)
         {
-            photoRepository = _photoRepository;
-            blogRepository = _blogRepository;
-            photoServices = _photoService;
+            _photoRepository = photoRepository;
+            _blogRepository = blogRepository;
+            _photoService = photoService;
         }
 
         [HttpPost]
@@ -85,7 +85,7 @@ namespace BlogLab.Web.Controllers
                 }
                 
             }
-             return BadRequest("Photo not found")
+            return BadRequest("Photo not found");
         }
     }
 }
